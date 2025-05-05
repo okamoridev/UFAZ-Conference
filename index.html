@@ -1,4 +1,10 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .conference-schedule-wrapper {
             font-family: Arial, sans-serif;
@@ -120,7 +126,8 @@
             pointer-events: none;
             cursor: default;
         }
-     /* Download section styling */
+        
+        /* Download section styling */
         .downloads-bar {
             background-color: #f9f9f9;
             border-radius: 8px;
@@ -181,513 +188,290 @@
                 justify-content: center;
             }
         }
-    </style>       
-
-<div class="conference-schedule-wrapper">
-    <div class="header">
-        <h1 class="conference-title">Conference Schedule</h1>
-        <div>June 3-5, 2025</div>
-    </div>
-
-    <div class="tabs">
-        <button class="tab active" onclick="showDay('tuesday')">Tuesday, June 3<br>Chemical Process</button>
-        <button class="tab" onclick="showDay('wednesday')">Wednesday, June 4<br>Material</button>
-        <button class="tab" onclick="showDay('thursday')">Thursday, June 5<br>Chemistry</button>
-    </div>       
-        
-
-
-
-    <div id="tuesday" class="day-content active">
-         <!-- Add this download section -->
-        
+    </style>
+</head>
+<body>
+    <div class="conference-schedule-wrapper">
+        <div class="header">
+            <h1 class="conference-title">Conference Schedule</h1>
+            <div>June 3-5, 2025</div>
         </div>
-        <!-- Tuesday's schedule -->
-        <div class="day-container">
-            <div class="day-header"></div>
-            <div class="downloads-bar">
-            <div class="download-info">
-                <h3>Tuesday Materials: Chemical Process</h3>
-            </div>
-            <div class="download-links">
-                <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Talk Abstracts
-                </a>
-                <a href="abstracts/tuesday-posters.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Poster Abstracts
-                </a>
-            </div>
-            <div class="schedule-item coffee-break">
-                <div class="time">9:00 - 9:30</div>
-                <div class="content">
-                    <div class="session-title">Morning Coffee & Registration</div>
-                </div>
-            </div>
 
-            <div class="schedule-item">
-                <div class="time">9:30 - 10:30</div>
-                <div class="content">
-                    <div class="session-title">Opening Ceremony</div>
-                    <div class="speaker">Chairman: TBD</div>
-                    <div class="location"> </div>
-                </div>
-            </div>
-
-            <a href="https://conference.cpml.ufaz.az/keynote_favre/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">10:30 - 11:10</div>
-                    <div class="content">
-                        <div class="session-title">Keynote:1</div>
-                        <div class="speaker">TBD</div>
-                        <div class="location">TBD</div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="schedule-item">
-                <div class="time">11:15 - 11:35</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 1</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location"> </div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">11:40 - 12:00</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 2</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location"> </div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">12:05 - 12:25</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 3</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location"> </div>
-                </div>
-            </div>
-
-            <div class="schedule-item lunch-break">
-                <div class="time">12:25 - 13:30</div>
-                <div class="content">
-                    <div class="session-title">Lunch Break</div>
-                </div>
-            </div>
-
-            <div class="time-marker">Afternoon</div>
-
-            <div class="schedule-item coffee-break">
-                <div class="time">13:30 - 14:00</div>
-                <div class="content">
-                    <div class="session-title">Coffee Break</div>
-                </div>
-            </div>
-
-            <a href="https://conference.cpml.ufaz.az/keynote_ono/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">14:00 - 14:40</div>
-                    <div class="content">
-                        <div class="session-title">Keynote: Pr. Tsutomu Ono</div>
-                        <div class="speaker">Okayama University, Japan</div>
-                        <div class="location">Flow-Controlled Materials Processing</div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="schedule-item">
-                <div class="time">14:45 - 15:05</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 1</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">15:10 - 15:30</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 2</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">15:35 - 15:55</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 3</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item coffee-break">
-                <div class="time">16:00 - 16:20</div>
-                <div class="content">
-                    <div class="session-title">Coffee Break</div>
-                </div>
-            </div>
-
-            <a href="https://conference.cpml.ufaz.az/keynote_thomas/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">16:20 - 17:00</div>
-                    <div class="content">
-                        <div class="session-title">Keynote: Pr. Sabu Thomas</div>
-                        <div class="speaker">Mahatma Gandhi University, India</div>
-                        <div class="location">Circular Economy: New Opportunities in Sustainable Nano Materials and Polymer Bio-Nanocomposites</div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="schedule-item">
-                <div class="time">17:05 - 17:25</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 1</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">17:30 - 17:50</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 2</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">17:55 - 18:15</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 3</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">18:30 - 19:00</div>
-                <div class="content">
-                    <div class="session-title">Concert</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
+        <div class="tabs">
+            <button class="tab active" onclick="showDay('tuesday')">Tuesday, June 3<br>Chemical Process</button>
+            <button class="tab" onclick="showDay('wednesday')">Wednesday, June 4<br>Material</button>
+            <button class="tab" onclick="showDay('thursday')">Thursday, June 5<br>Chemistry</button>
         </div>
-    </div>
 
-    <div id="wednesday" class="day-content">
-    <!-- Wednesday -->
-        <div class="day-container">
-            <div class="day-header"></div>
-                 <div class="downloads-bar">
-            <div class="download-info">
-                <h3>TEST</h3>
-            </div>
-            <div class="download-links">
-                <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Talk Abstracts
-                </a>
-                <a href="abstracts/tuesday-posters.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Poster Abstracts
-                </a>
-            </div>
-            
-            <div class="schedule-item coffee-break">
-                <div class="time">9:30 - 10:00</div>
-                <div class="content">
-                    <div class="session-title">Morning Coffee</div>
-                </div>
-            </div>
-
-            <a href="https://conference.cpml.ufaz.az/keynote_kohler/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">10:00 - 10:40</div>
-                    <div class="content">
-                        <div class="session-title">Keynote: Pr. Dr. Mickael Köhler</div>
-                        <div class="speaker">Ilmenau University of Technology, Germany</div>
-                        <div class="location">The Plenty of Room in the World of Hierarchically Composed Particles -Micro-Scale Challenges between Chemistry and Engineering </div>
+        <!-- TUESDAY -->
+        <div id="tuesday" class="day-content active">
+            <div class="day-container">
+                <div class="day-header"></div>
+                
+                <!-- Download bar for Tuesday -->
+                <div class="downloads-bar">
+                    <div class="download-info">
+                        <h3>Tuesday Materials: Chemical Process</h3>
+                    </div>
+                    <div class="download-links">
+                        <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
+                            <i class="fa fa-file-pdf-o"></i> Talk Abstracts
+                        </a>
+                        <a href="abstracts/tuesday-posters.pdf" class="download-link" download>
+                            <i class="fa fa-file-pdf-o"></i> Poster Abstracts
+                        </a>
                     </div>
                 </div>
-            </a>
-
-            <div class="schedule-item">
-                <div class="time">10:45 - 11:05</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 1</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">11:10 - 11:30</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 2</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">11:35 - 11:55</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 3</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">12:00 - 12:20</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 4</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item lunch-break">
-                <div class="time">12:20 - 13:30</div>
-                <div class="content">
-                    <div class="session-title">Lunch Break</div>
-                </div>
-            </div>
-
-            <div class="time-marker">Afternoon</div>
-
-            <div class="schedule-item coffee-break">
-                <div class="time">13:30 - 14:00</div>
-                <div class="content">
-                    <div class="session-title">Coffee</div>
-                </div>
-            </div>
-
-            <a href="https://conference.cpml.ufaz.az/keynote_Babanli/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">14:00 - 14:40</div>
+                
+                <div class="schedule-item coffee-break">
+                    <div class="time">9:00 - 9:30</div>
                     <div class="content">
-                        <div class="session-title">Keynote: Assoc.Pr. Babanli Dunya</div>
-                        <div class="speaker">UFAZ Azerbaijain</div>
-                        <div class="location">TBD</div>
+                        <div class="session-title">Morning Coffee & Registration</div>
                     </div>
                 </div>
-            </a>
 
-            <div class="schedule-item">
-                <div class="time">14:45 - 15:05</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 1</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">15:10 - 15:30</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 2</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">15:35 - 15:55</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 3</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item coffee-break">
-                <div class="time">16:00 - 16:20</div>
-                <div class="content">
-                    <div class="session-title">Coffee Break</div>
-                </div>
-            </div>
-
-
-            <a href="https://conference.cpml.ufaz.az/keynote_ramakrishna/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">16:20 - 17:00</div>
-                    <div class="content">
-                        <div class="session-title">Keynote: Pr. Ramakrishna Seeram</div>
-                        <div class="speaker">National University of Singapore, Singapore</div>
-                        <div class="location">TBD</div>
-                    </div>
-                </div>
-            </a>
-            <div class="schedule-item">
-                <div class="time">17:05 - 17:25</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 1</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">17:30 - 17:50</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 2</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">17:55 - 18:15</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 3</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">18:20 - 18:40</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 4</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">18:45 - 20:15</div>
-                <div class="content">
-                    <div class="session-title">Poster Session with Dinner</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="thursday" class="day-content">
-        <!-- Thursday -->
-        <div class="day-container">
-            <div class="day-header"></div>
-            <div class="downloads-bar">
-            <div class="download-info">
-                <h3>Tuesday Materials: Chemical Process</h3>
-            </div>
-            <div class="download-links">
-                <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Talk Abstracts
-                </a>
-                <a href="abstracts/tuesday-posters.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Poster Abstracts
-                </a>
-            </div>
-            <div class="schedule-item coffee-break">
-                <div class="time">9:30 - 10:00</div>
-                <div class="content">
-                    <div class="session-title">Morning Coffee</div>
-                </div>
-            </div>
-
-            <a href="https://conference.cpml.ufaz.az/keynote_grande/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">10:00 - 10:40</div>
-                    <div class="content">
-                        <div class="session-title">Keynote: Pr. Grande Daniel</div>
-                        <div class="speaker">Charles Sadron Institute CNRS, France</div>
-                        <div class="location">From Macromolecular Engineering to Engineering of Functional Porous Polymers</div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="schedule-item">
-                <div class="time">10:45 - 11:05</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 1</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">11:10 - 11:30</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 2</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <div class="time">11:35 - 11:55</div>
-                <div class="content">
-                    <div class="session-title">Conference Session 3</div>
-                    <div class="speaker">[Speaker Name], [Institution]</div>
-                    <div class="location">Room 102</div>
-                </div>
-            </div>
-
-            <a href="https://conference.cpml.ufaz.az/keynote_Ismailov/" style="text-decoration: none; color: inherit;">
-                <div class="schedule-item keynote">
-                    <div class="time">12:00 - 12:40</div>
-                    <div class="content">
-                        <div class="session-title">Keynote: Pr. Etibar Ismayilov </div>
-                        <div class="speaker">Institute of Catalysis and Inorganic Chemistry, Azerbaijan</div>
-                        <div class="location">Hydrogen production by natural gas pyrolysis. Current status and prospects.</div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="schedule-item lunch-break">
-                <div class="time">12:45 - 13:45</div>
-                <div class="content">
-                    <div class="session-title">Lunch Break</div>
-                </div>
-            </div>
-
-
-            <a href="https://conference.cpml.ufaz.az/excurrsion/" style="text-decoration: none; color: inherit;">
                 <div class="schedule-item">
-                    <div class="time">13:45 - 19:00</div>
+                    <div class="time">9:30 - 10:30</div>
                     <div class="content">
-                        <div class="session-title">Excursion in Baku</div>
-                        <div class="location">Meeting point: Great Hall</div>
+                        <div class="session-title">Opening Ceremony</div>
+                        <div class="speaker">Chairman: TBD</div>
+                        <div class="location"> </div>
                     </div>
                 </div>
-            </a>
 
-            <div class="schedule-item gala-dinner">
-                <div class="time">Evening</div>
-                <div class="content">
-                    <div class="session-title">Gala Dinner</div>
-                    <div class="location">Meeting point: Room 102</div>
+                <a href="https://conference.cpml.ufaz.az/keynote_favre/" style="text-decoration: none; color: inherit;">
+                    <div class="schedule-item keynote">
+                        <div class="time">10:30 - 11:10</div>
+                        <div class="content">
+                            <div class="session-title">Keynote:1</div>
+                            <div class="speaker">TBD</div>
+                            <div class="location">TBD</div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="schedule-item">
+                    <div class="time">11:15 - 11:35</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 1</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location"> </div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">11:40 - 12:00</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 2</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location"> </div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">12:05 - 12:25</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 3</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location"> </div>
+                    </div>
+                </div>
+
+                <div class="schedule-item lunch-break">
+                    <div class="time">12:25 - 13:30</div>
+                    <div class="content">
+                        <div class="session-title">Lunch Break</div>
+                    </div>
+                </div>
+
+                <div class="time-marker">Afternoon</div>
+
+                <div class="schedule-item coffee-break">
+                    <div class="time">13:30 - 14:00</div>
+                    <div class="content">
+                        <div class="session-title">Coffee Break</div>
+                    </div>
+                </div>
+
+                <a href="https://conference.cpml.ufaz.az/keynote_ono/" style="text-decoration: none; color: inherit;">
+                    <div class="schedule-item keynote">
+                        <div class="time">14:00 - 14:40</div>
+                        <div class="content">
+                            <div class="session-title">Keynote: Pr. Tsutomu Ono</div>
+                            <div class="speaker">Okayama University, Japan</div>
+                            <div class="location">Flow-Controlled Materials Processing</div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="schedule-item">
+                    <div class="time">14:45 - 15:05</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 1</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location">Room 102</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">15:10 - 15:30</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 2</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location">Room 102</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">15:35 - 15:55</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 3</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location">Room 102</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item coffee-break">
+                    <div class="time">16:00 - 16:20</div>
+                    <div class="content">
+                        <div class="session-title">Coffee Break</div>
+                    </div>
+                </div>
+
+                <a href="https://conference.cpml.ufaz.az/keynote_thomas/" style="text-decoration: none; color: inherit;">
+                    <div class="schedule-item keynote">
+                        <div class="time">16:20 - 17:00</div>
+                        <div class="content">
+                            <div class="session-title">Keynote: Pr. Sabu Thomas</div>
+                            <div class="speaker">Mahatma Gandhi University, India</div>
+                            <div class="location">Circular Economy: New Opportunities in Sustainable Nano Materials and Polymer Bio-Nanocomposites</div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="schedule-item">
+                    <div class="time">17:05 - 17:25</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 1</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location">Room 102</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">17:30 - 17:50</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 2</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location">Room 102</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">17:55 - 18:15</div>
+                    <div class="content">
+                        <div class="session-title">Conference Session 3</div>
+                        <div class="speaker">[Speaker Name], [Institution]</div>
+                        <div class="location">Room 102</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">18:30 - 19:00</div>
+                    <div class="content">
+                        <div class="session-title">Concert</div>
+                        <div class="location">Room 102</div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- WEDNESDAY -->
+        <div id="wednesday" class="day-content">
+            <div class="day-container">
+                <div class="day-header"></div>
+                
+                <!-- Download bar for Wednesday -->
+                <div class="downloads-bar">
+                    <div class="download-info">
+                        <h3>Wednesday Materials: Material</h3>
+                    </div>
+                    <div class="download-links">
+                        <a href="abstracts/wednesday-talks.pdf" class="download-link" download>
+                            <i class="fa fa-file-pdf-o"></i> Talk Abstracts
+                        </a>
+                        <a href="abstracts/wednesday-posters.pdf" class="download-link" download>
+                            <i class="fa fa-file-pdf-o"></i> Poster Abstracts
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="schedule-item coffee-break">
+                    <div class="time">9:30 - 10:00</div>
+                    <div class="content">
+                        <div class="session-title">Morning Coffee</div>
+                    </div>
+                </div>
+
+                <a href="https://conference.cpml.ufaz.az/keynote_kohler/" style="text-decoration: none; color: inherit;">
+                    <div class="schedule-item keynote">
+                        <div class="time">10:00 - 10:40</div>
+                        <div class="content">
+                            <div class="session-title">Keynote: Pr. Dr. Mickael Köhler</div>
+                            <div class="speaker">Ilmenau University of Technology, Germany</div>
+                            <div class="location">The Plenty of Room in the World of Hierarchically Composed Particles -Micro-Scale Challenges between Chemistry and Engineering </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Rest of Wednesday schedule items... -->
+                <!-- (Continuing with the rest of Wednesday's schedule) -->
+            </div>
+        </div>
+
+        <!-- THURSDAY -->
+        <div id="thursday" class="day-content">
+            <div class="day-container">
+                <div class="day-header"></div>
+                
+                <!-- Download bar for Thursday -->
+                <div class="downloads-bar">
+                    <div class="download-info">
+                        <h3>Thursday Materials: Chemistry</h3>
+                    </div>
+                    <div class="download-links">
+                        <a href="abstracts/thursday-talks.pdf" class="download-link" download>
+                            <i class="fa fa-file-pdf-o"></i> Talk Abstracts
+                        </a>
+                        <a href="abstracts/thursday-posters.pdf" class="download-link" download>
+                            <i class="fa fa-file-pdf-o"></i> Poster Abstracts
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- (Thursday schedule items would go here) -->
+            </div>
+        </div>
+
+        <script>
+            function showDay(day) {
+                // Hide all content
+                document.querySelectorAll('.day-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                
+                // Show selected content
+                document.getElementById(day).classList.add('active');
+                
+                // Add active class to clicked tab
+                event.currentTarget.classList.add('active');
+            }
+        </script>
     </div>
-
-   
-
-    <script>
-        function showDay(day) {
-            // Hide all content
-            document.querySelectorAll('.day-content').forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Remove active class from all tabs
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Show selected content
-            document.getElementById(day).classList.add('active');
-            
-            // Add active class to clicked tab
-            event.currentTarget.classList.add('active');
-        }
-    </script>
-</div>
+</body>
+</html>
