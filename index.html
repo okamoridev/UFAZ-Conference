@@ -78,6 +78,9 @@
         .conference-schedule-wrapper .lunch-break {
             background-color: rgba(254, 73, 24, 0.08);
         }
+        .conference-schedule-wrapper .welcoming {
+            background-color: rgba(254, 73, 24, 0.08);
+        }
         .conference-schedule-wrapper .gala-dinner {
             background-color: rgba(254, 73, 24, 0.08);
         }
@@ -188,6 +191,13 @@
                 justify-content: center;
             }
         }
+
+        .presentation-title {
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+            margin-top: 3px;
+        }
     </style>
 </head>
 <body>
@@ -198,9 +208,9 @@
         </div>
 
         <div class="tabs">
-            <button class="tab active" onclick="showDay('tuesday')">Tuesday, June 3<br>Chemical Process</button>
+            <button class="tab active" onclick="showDay('tuesday')">Tuesday, June 3<br>Polymer</button>
             <button class="tab" onclick="showDay('wednesday')">Wednesday, June 4<br>Material</button>
-            <button class="tab" onclick="showDay('thursday')">Thursday, June 5<br>Chemistry</button>
+            <button class="tab" onclick="showDay('thursday')">Thursday, June 5<br>Chemistry / Process</button>
         </div>
 
         <!-- TUESDAY -->
@@ -211,7 +221,7 @@
                 <!-- Download bar for Tuesday -->
                 <div class="downloads-bar">
                     <div class="download-info">
-                        <h3>Tuesday Materials: Chemical Process</h3>
+                        <h3>Tuesday Materials: Polymer</h3>
                     </div>
                     <div class="download-links">
                         <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
@@ -223,164 +233,160 @@
                     </div>
                 </div>
                 
-                <div class="schedule-item coffee-break">
-                    <div class="time">9:00 - 9:30</div>
+                <div class="schedule-item welcoming">
+                    <div class="time">8:30 - 9:00</div>
                     <div class="content">
-                        <div class="session-title">Morning Coffee & Registration</div>
+                        <div class="session-title">Welcoming Time</div>
                     </div>
                 </div>
 
                 <div class="schedule-item">
-                    <div class="time">9:30 - 10:30</div>
+                    <div class="time">9:00 - 10:00</div>
                     <div class="content">
                         <div class="session-title">Opening Ceremony</div>
-                        <div class="speaker">Chairman: TBD</div>
-                        <div class="location"> </div>
+                        <div class="speaker">Rector, UFAZ Director, Scientific Commitee Dunya, SOCAR Polymer, + ...</div>
                     </div>
                 </div>
 
-                <a href="https://conference.cpml.ufaz.az/keynote_favre/" style="text-decoration: none; color: inherit;">
-                    <div class="schedule-item keynote">
-                        <div class="time">10:30 - 11:10</div>
-                        <div class="content">
-                            <div class="session-title">Keynote:1</div>
-                            <div class="speaker">TBD</div>
-                            <div class="location">TBD</div>
-                        </div>
+                <div class="schedule-item keynote">
+                    <div class="time">10:00 - 10:35</div>
+                    <div class="content">
+                        <div class="session-title">Polymer Keynote: Pr. Seeram Ramakrishna</div>
+                        <div class="speaker">National University of Singapore, Singapore</div>
                     </div>
-                </a>
+                </div>
+
+                <div class="schedule-item coffee-break">
+                    <div class="time">10:35 - 11:15</div>
+                    <div class="content">
+                        <div class="session-title">Coffee Break</div>
+                    </div>
+                </div>
 
                 <div class="schedule-item">
                     <div class="time">11:15 - 11:35</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 1</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location"> </div>
+                        <div class="session-title">Sabina Rahiova, PhD</div>
+                        <div class="speaker">UFAZ, Department of Chemistry</div>
+                        <div class="presentation-title">Modification of Polyisoprene</div>
                     </div>
                 </div>
 
                 <div class="schedule-item">
                     <div class="time">11:40 - 12:00</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 2</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location"> </div>
+                        <div class="session-title">Delphine Chan-Seng, Researcher</div>
+                        <div class="speaker">CNRS - Institut Charles Sadron</div>
+                        <div class="presentation-title">Macromolecular engineering to tune materials for biomedical applications</div>
                     </div>
                 </div>
 
                 <div class="schedule-item">
                     <div class="time">12:05 - 12:25</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 3</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location"> </div>
+                        <div class="session-title">Leyla Aliyeva, PhD</div>
+                        <div class="speaker">Azerbaijan State University</div>
                     </div>
                 </div>
 
                 <div class="schedule-item lunch-break">
                     <div class="time">12:25 - 13:30</div>
                     <div class="content">
-                        <div class="session-title">Lunch Break</div>
+                        <div class="session-title">Lunch Break / Coffee</div>
                     </div>
                 </div>
 
-                <div class="time-marker">Afternoon</div>
+                <div class="schedule-item keynote">
+                    <div class="time">13:30 - 14:05</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Pr. Daniel Grande</div>
+                        <div class="speaker">Charles Sadron Institute CNRS, France</div>
+                        <div class="presentation-title">From Macromolecular Engineering to Engineering of Functional Porous Polymers</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">14:10 - 14:30</div>
+                    <div class="content">
+                        <div class="session-title">Shahana Guliyeva</div>
+                        <div class="speaker">Azerbaijan Medical University, Department of Pharmaceutical Toxicology and Chemistry</div>
+                        <div class="presentation-title">Thermal properties of polymers obtained by copolymerisation of o-, p-, m-carboxyphenylmaleimides and styrene</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">14:35 - 14:55</div>
+                    <div class="content">
+                        <div class="session-title">Sakina, PhD</div>
+                        <div class="speaker">CNRS - Institut Charles Sadron</div>
+                        <div class="presentation-title">Surface modification of upconversion nanoparticles with oligosarcosine for bioimaging</div>
+                    </div>
+                </div>
 
                 <div class="schedule-item coffee-break">
-                    <div class="time">13:30 - 14:00</div>
+                    <div class="time">14:55 - 15:35</div>
                     <div class="content">
                         <div class="session-title">Coffee Break</div>
                     </div>
                 </div>
 
-                <a href="https://conference.cpml.ufaz.az/keynote_ono/" style="text-decoration: none; color: inherit;">
-                    <div class="schedule-item keynote">
-                        <div class="time">14:00 - 14:40</div>
-                        <div class="content">
-                            <div class="session-title">Keynote: Pr. Tsutomu Ono</div>
-                            <div class="speaker">Okayama University, Japan</div>
-                            <div class="location">Flow-Controlled Materials Processing</div>
-                        </div>
-                    </div>
-                </a>
-
-                <div class="schedule-item">
-                    <div class="time">14:45 - 15:05</div>
+                <div class="schedule-item keynote">
+                    <div class="time">15:35 - 16:10</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 1</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location">Room 102</div>
+                        <div class="session-title">Keynote: Rayyat Ismaylov</div>
+                        <div class="speaker">Azerbaijan University</div>
                     </div>
                 </div>
 
                 <div class="schedule-item">
-                    <div class="time">15:10 - 15:30</div>
+                    <div class="time">16:15 - 16:35</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 2</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location">Room 102</div>
+                        <div class="session-title">Aysel Mammadova</div>
+                        <div class="speaker">Department of Chemical Engineering, Baku Higher Oil School</div>
+                        <div class="presentation-title">The effect of thiol side group on release kinetics of thiolated cationic polyaspartamides</div>
                     </div>
                 </div>
 
                 <div class="schedule-item">
-                    <div class="time">15:35 - 15:55</div>
+                    <div class="time">16:40 - 17:00</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 3</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location">Room 102</div>
+                        <div class="session-title">Vugar Khalilov, PhD</div>
+                        <div class="speaker">Institut Charles Sadron - CNRS</div>
+                        <div class="presentation-title">Online production of Polyelectrolytes microfibers</div>
                     </div>
                 </div>
-
-                <div class="schedule-item coffee-break">
-                    <div class="time">16:00 - 16:20</div>
-                    <div class="content">
-                        <div class="session-title">Coffee Break</div>
-                    </div>
-                </div>
-
-                <a href="https://conference.cpml.ufaz.az/keynote_thomas/" style="text-decoration: none; color: inherit;">
-                    <div class="schedule-item keynote">
-                        <div class="time">16:20 - 17:00</div>
-                        <div class="content">
-                            <div class="session-title">Keynote: Pr. Sabu Thomas</div>
-                            <div class="speaker">Mahatma Gandhi University, India</div>
-                            <div class="location">Circular Economy: New Opportunities in Sustainable Nano Materials and Polymer Bio-Nanocomposites</div>
-                        </div>
-                    </div>
-                </a>
 
                 <div class="schedule-item">
                     <div class="time">17:05 - 17:25</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 1</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location">Room 102</div>
+                        <div class="session-title">Tamerlan Shirinov, PhD</div>
+                        <div class="speaker">Azerbaijan State Oil and Industry University</div>
+                        <div class="presentation-title">Modification of waste thermoplastics with amide-group functionalized co-oligomers</div>
                     </div>
                 </div>
 
                 <div class="schedule-item">
                     <div class="time">17:30 - 17:50</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 2</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location">Room 102</div>
+                        <div class="session-title">Narinj Taghiyeva, PhD</div>
+                        <div class="speaker">CPML (UFAZ) and ICPEES (CNRS)</div>
+                        <div class="presentation-title">Graphene Oxide-Based Composites for the Removal of Organic Pollutants from Water</div>
                     </div>
                 </div>
 
                 <div class="schedule-item">
-                    <div class="time">17:55 - 18:15</div>
+                    <div class="time">18:00 - 19:30</div>
                     <div class="content">
-                        <div class="session-title">Conference Session 3</div>
-                        <div class="speaker">[Speaker Name], [Institution]</div>
-                        <div class="location">Room 102</div>
+                        <div class="session-title">Concert in UFAZ garden</div>
+                        <div class="speaker">With small drinks</div>
                     </div>
                 </div>
 
-                <div class="schedule-item">
-                    <div class="time">18:30 - 19:00</div>
+                <div class="schedule-item gala-dinner">
+                    <div class="time">20:00</div>
                     <div class="content">
-                        <div class="session-title">Concert</div>
-                        <div class="location">Room 102</div>
+                        <div class="session-title">Gala dinner</div>
+                        <div class="speaker">At a local restaurant (100 persons)</div>
                     </div>
                 </div>
             </div>
@@ -406,26 +412,155 @@
                     </div>
                 </div>
                 
-                <div class="schedule-item coffee-break">
-                    <div class="time">9:30 - 10:00</div>
+                <div class="schedule-item welcoming">
+                    <div class="time">8:30 - 9:00</div>
                     <div class="content">
-                        <div class="session-title">Morning Coffee</div>
+                        <div class="session-title">Welcoming Time</div>
                     </div>
                 </div>
 
-                <a href="https://conference.cpml.ufaz.az/keynote_kohler/" style="text-decoration: none; color: inherit;">
-                    <div class="schedule-item keynote">
-                        <div class="time">10:00 - 10:40</div>
-                        <div class="content">
-                            <div class="session-title">Keynote: Pr. Dr. Mickael Köhler</div>
-                            <div class="speaker">Ilmenau University of Technology, Germany</div>
-                            <div class="location">The Plenty of Room in the World of Hierarchically Composed Particles -Micro-Scale Challenges between Chemistry and Engineering </div>
-                        </div>
+                <div class="schedule-item keynote">
+                    <div class="time">9:00 - 9:35</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Eldar Garayev</div>
+                        <div class="speaker">Azerbaijan Medical University, Azerbaijan</div>
                     </div>
-                </a>
+                </div>
 
-                <!-- Rest of Wednesday schedule items... -->
-                <!-- (Continuing with the rest of Wednesday's schedule) -->
+                <div class="schedule-item">
+                    <div class="time">9:40 - 10:00</div>
+                    <div class="content">
+                        <div class="session-title">Mukunthan Kuppusamy Selvam, Pr.</div>
+                        <div class="speaker">Department of Biotechnology, Manipal Institute of Technology</div>
+                        <div class="presentation-title">Rambutan Leaf Extract Mediated Green Synthesis of Metal Nanoparticles for Antibacterial Applications</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">10:05 - 10:25</div>
+                    <div class="content">
+                        <div class="session-title">Khuraman Mustafayeva, Researcher</div>
+                        <div class="speaker">Azerbaijan Medical University Department of Pharmacognosy</div>
+                        <div class="presentation-title">C-glycosylflavones from the aerial part of Silene schafta growing in Azerbaijan</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item coffee-break">
+                    <div class="time">10:25 - 11:05</div>
+                    <div class="content">
+                        <div class="session-title">Coffee Break</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item keynote">
+                    <div class="time">11:05 - 11:40</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Pr. Dr. Mickael Köhler</div>
+                        <div class="speaker">Ilmenau University of Technology, Germany</div>
+                        <div class="presentation-title">The Plenty of Room in the World of Hierarchically Composed Particles - Micro-Scale Challenges between Chemistry and Engineering</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">11:45 - 12:05</div>
+                    <div class="content">
+                        <div class="session-title">Gulnaz Gahramanova, Dr.</div>
+                        <div class="speaker">French-Azerbaijani University (UFAZ)</div>
+                        <div class="presentation-title">Niobium-Based MXenes: Synthesis and Characterization as High-Performance Photothermal Agents for Cancer</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">12:10 - 12:30</div>
+                    <div class="content">
+                        <div class="session-title">Sevinj Javadova, PhD</div>
+                        <div class="speaker">Institute Catalysis and Inorganic Chemistry named after acad. M. Nagiyev</div>
+                        <div class="presentation-title">Physical-Chemical studies of Bi2Se3 thin films obtained by electrodeposition</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item lunch-break">
+                    <div class="time">12:30 - 13:30</div>
+                    <div class="content">
+                        <div class="session-title">Lunch Break / Coffee</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item keynote">
+                    <div class="time">13:30 - 14:05</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Assoc.Pr. Dunya Babanli</div>
+                        <div class="speaker">UFAZ, Azerbaijan</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">14:10 - 14:30</div>
+                    <div class="content">
+                        <div class="session-title">Elnur Orujlu, Pr.</div>
+                        <div class="speaker">Department of Oil-Mechanical Engineering, Nanomaterials and Nanotechnologies Science research laboratory</div>
+                        <div class="presentation-title">Study of thermodynamic properties of GeTe-rich germanium antimony tellurides</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">14:35 - 14:55</div>
+                    <div class="content">
+                        <div class="session-title">Kamala Badalova</div>
+                        <div class="speaker">Pharmaceutical toxicology and chemistry department, Azerbaijan Medical University</div>
+                        <div class="presentation-title">Characterization of Toxicity, Assessment of Engineered TiO2 and Ag Nanoparticles in Biological Objects</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item coffee-break">
+                    <div class="time">15:00 - 15:40</div>
+                    <div class="content">
+                        <div class="session-title">Coffee Break</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item keynote">
+                    <div class="time">15:40 - 16:15</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Pr. Stefano Bellucci</div>
+                        <div class="speaker">INFN - Italian National Institute of Nuclear Physics</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">16:20 - 16:40</div>
+                    <div class="content">
+                        <div class="session-title">Irfan Mohammad, PhD</div>
+                        <div class="speaker">Indian Institute of Technology</div>
+                        <div class="presentation-title">Transparent Superhydrophobic Coatings Based on Carbonaceous Soot-PDMS/DTMS for Self-Cleaning, Anti-fouling and Anti-Corrosion Applications</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">16:45 - 17:05</div>
+                    <div class="content">
+                        <div class="session-title">Minira Aghahuseynova, Pr.</div>
+                        <div class="speaker">Azerbaijan State Oil and Industry University</div>
+                        <div class="presentation-title">Synthesis of carbon microtubes at low pressures by CVD method</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">17:10 - 17:30</div>
+                    <div class="content">
+                        <div class="session-title">Shabnam Feyziyeva, PhD</div>
+                        <div class="speaker">Chemical Sciences, University of Strasbourg | ICPEES</div>
+                        <div class="presentation-title">Design and Catalytic Applications of a Novel Cerium Metal Organic Framework</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">18:00 - 20:15</div>
+                    <div class="content">
+                        <div class="session-title">Poster Session + Sponsor Panels</div>
+                        <div class="speaker">With Catering (Standing Dinner)</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -437,7 +572,7 @@
                 <!-- Download bar for Thursday -->
                 <div class="downloads-bar">
                     <div class="download-info">
-                        <h3>Thursday Materials: Chemistry</h3>
+                        <h3>Thursday Materials: Chemistry / Process</h3>
                     </div>
                     <div class="download-links">
                         <a href="abstracts/thursday-talks.pdf" class="download-link" download>
@@ -449,109 +584,147 @@
                     </div>
                 </div>
                 
-               <!-- THURSDAY -->
-<div id="thursday" class="day-content">
-    <div class="day-container">
-        <div class="day-header"></div>
-        
-        <!-- Download bar for Thursday -->
-        <div class="downloads-bar">
-            <div class="download-info">
-                <h3>Thursday Materials: Chemistry</h3>
-            </div>
-            <div class="download-links">
-                <a href="abstracts/thursday-talks.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Talk Abstracts
-                </a>
-                <a href="abstracts/thursday-posters.pdf" class="download-link" download>
-                    <i class="fa fa-file-pdf-o"></i> Poster Abstracts
-                </a>
-            </div>
-        </div>
-        
-        <div class="schedule-item coffee-break">
-            <div class="time">9:30 - 10:00</div>
-            <div class="content">
-                <div class="session-title">Morning Coffee</div>
-            </div>
-        </div>
+                <div class="schedule-item welcoming">
+                    <div class="time">8:30 - 9:00</div>
+                    <div class="content">
+                        <div class="session-title">Welcoming Time</div>
+                    </div>
+                </div>
 
-        <a href="https://conference.cpml.ufaz.az/keynote_grande/" style="text-decoration: none; color: inherit;">
-            <div class="schedule-item keynote">
-                <div class="time">10:00 - 10:40</div>
-                <div class="content">
-                    <div class="session-title">Keynote: Pr. Grande Daniel</div>
-                    <div class="speaker">Charles Sadron Institute CNRS, France</div>
-                    <div class="location">From Macromolecular Engineering to Engineering of Functional Porous Polymers</div>
+                <div class="schedule-item keynote">
+                    <div class="time">9:00 - 9:35</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Pr. Ulviyya Asanova</div>
+                        <div class="speaker">Baku State University, Azerbaijan</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">9:40 - 10:00</div>
+                    <div class="content">
+                        <div class="session-title">Ulviyya Gurbanova, PhD</div>
+                        <div class="speaker">Academician Y.H. Mammadaliyev Institute of Petrochemical Processes</div>
+                        <div class="presentation-title">Synthesis of para-[1-(3-)methylcyclohexyl]nonylphenols and some of their derivatives</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">10:05 - 10:25</div>
+                    <div class="content">
+                        <div class="session-title">Sahib Mammadov</div>
+                        <div class="speaker">Institute of Radiation Problems, Ministry of Science and Education</div>
+                        <div class="presentation-title">Analysis of Trap Parameters Associated with Intermediate Luminescence Peaks of Quartz</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item coffee-break">
+                    <div class="time">10:25 - 11:05</div>
+                    <div class="content">
+                        <div class="session-title">Coffee Break</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item keynote">
+                    <div class="time">11:05 - 11:40</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Pr. Etibar Ismayilov</div>
+                        <div class="speaker">Institute of Catalysis and Inorganic Chemistry, Azerbaijan</div>
+                        <div class="presentation-title">Hydrogen production by natural gas pyrolysis. Current status and prospects.</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">11:45 - 12:05</div>
+                    <div class="content">
+                        <div class="session-title">Tahmina Taghi, PhD</div>
+                        <div class="speaker">French-Azerbaijani University / ASOIU</div>
+                        <div class="presentation-title">Synthesis of binary Zn-containing catalysts and study of their properties in the process of acetone production from bioethanol</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">12:10 - 12:30</div>
+                    <div class="content">
+                        <div class="session-title">Samir Karimov, PhD</div>
+                        <div class="speaker">French Azerbaijani University under Azerbaijan State Oil and Industry University</div>
+                        <div class="presentation-title">Major byproducts of hexachlorobenzene in isopropanol under gamma radiolysis</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item lunch-break">
+                    <div class="time">12:30 - 13:30</div>
+                    <div class="content">
+                        <div class="session-title">Lunch Break / Coffee</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item keynote">
+                    <div class="time">13:30 - 14:05</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Pr. Tsutomu Ono</div>
+                        <div class="speaker">Okayama University, Japan</div>
+                        <div class="presentation-title">Flow-Controlled Materials Processing</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">14:10 - 14:30</div>
+                    <div class="content">
+                        <div class="session-title">Farid Mammadov, PhD</div>
+                        <div class="speaker">Named after academician Y.H. Mammadaliyev of the Ministry of Science and Education INSTITUTE OF PETROCHEMICAL PROCESSES</div>
+                        <div class="presentation-title">Usage of Modified γ-Al2O3 Catalysts for the Conversion of Alcohols to Hydrocarbons</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">14:35 - 14:55</div>
+                    <div class="content">
+                        <div class="session-title">Khamis Abiyev, PhD</div>
+                        <div class="speaker">«Petrochemical technology and industrial ecology» departm. at Azerbaijan State Oil and Industry University</div>
+                        <div class="presentation-title">Oxidative Desulfurisation of Vacuum Gas Oil in the Presence of Ozone</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item keynote">
+                    <div class="time">15:00 - 15:35</div>
+                    <div class="content">
+                        <div class="session-title">Keynote: Pr. Sabu Thomas</div>
+                        <div class="speaker">Mahatma Gandhi University, India</div>
+                        <div class="presentation-title">Circular Economy: New Opportunities in Sustainable Nano Materials and Polymer Bio-Nanocomposites</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">15:40 - 16:15</div>
+                    <div class="content">
+                        <div class="session-title">Closing Ceremony</div>
+                        <div class="speaker">JM Lehn</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item coffee-break">
+                    <div class="time">16:15 - 16:45</div>
+                    <div class="content">
+                        <div class="session-title">Coffee & Closing Ceremony</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">16:45 - 19:00</div>
+                    <div class="content">
+                        <div class="session-title">Visit of Baku, Old city</div>
+                    </div>
+                </div>
+
+                <div class="schedule-item gala-dinner">
+                    <div class="time">20:00</div>
+                    <div class="content">
+                        <div class="session-title">Dinner for Keynote + Guest</div>
+                        <div class="speaker">20 Persons</div>
+                    </div>
                 </div>
             </div>
-        </a>
-
-        <div class="schedule-item">
-            <div class="time">10:45 - 11:05</div>
-            <div class="content">
-                <div class="session-title">Conference Session 1</div>
-                <div class="speaker">[Speaker Name], [Institution]</div>
-                <div class="location">Room 102</div>
-            </div>
         </div>
-
-        <div class="schedule-item">
-            <div class="time">11:10 - 11:30</div>
-            <div class="content">
-                <div class="session-title">Conference Session 2</div>
-                <div class="speaker">[Speaker Name], [Institution]</div>
-                <div class="location">Room 102</div>
-            </div>
-        </div>
-
-        <div class="schedule-item">
-            <div class="time">11:35 - 11:55</div>
-            <div class="content">
-                <div class="session-title">Conference Session 3</div>
-                <div class="speaker">[Speaker Name], [Institution]</div>
-                <div class="location">Room 102</div>
-            </div>
-        </div>
-
-        <a href="https://conference.cpml.ufaz.az/keynote_Ismailov/" style="text-decoration: none; color: inherit;">
-            <div class="schedule-item keynote">
-                <div class="time">12:00 - 12:40</div>
-                <div class="content">
-                    <div class="session-title">Keynote: Pr. Etibar Ismayilov </div>
-                    <div class="speaker">Institute of Catalysis and Inorganic Chemistry, Azerbaijan</div>
-                    <div class="location">Hydrogen production by natural gas pyrolysis. Current status and prospects.</div>
-                </div>
-            </div>
-        </a>
-
-        <div class="schedule-item lunch-break">
-            <div class="time">12:45 - 13:45</div>
-            <div class="content">
-                <div class="session-title">Lunch Break</div>
-            </div>
-        </div>
-
-        <a href="https://conference.cpml.ufaz.az/excurrsion/" style="text-decoration: none; color: inherit;">
-            <div class="schedule-item">
-                <div class="time">13:45 - 19:00</div>
-                <div class="content">
-                    <div class="session-title">Excursion in Baku</div>
-                    <div class="location">Meeting point: Great Hall</div>
-                </div>
-            </div>
-        </a>
-
-        <div class="schedule-item gala-dinner">
-            <div class="time">Evening</div>
-            <div class="content">
-                <div class="session-title">Gala Dinner</div>
-                <div class="location">Meeting point: Room 102</div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
         <script>
             function showDay(day) {
