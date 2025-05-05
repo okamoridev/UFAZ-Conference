@@ -120,6 +120,67 @@
             pointer-events: none;
             cursor: default;
         }
+     /* Download section styling */
+        .downloads-bar {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-left: 4px solid #fe4918;
+        }
+        
+        .download-info h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+        
+        .download-links {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .download-link {
+            display: inline-flex;
+            align-items: center;
+            background: #fe4918;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background 0.2s;
+        }
+        
+        .download-link:hover {
+            background: #e53b0c;
+        }
+        
+        .download-link i {
+            margin-right: 6px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 650px) {
+            .downloads-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .download-links {
+                margin-top: 10px;
+                width: 100%;
+            }
+            
+            .download-link {
+                flex: 1;
+                justify-content: center;
+            }
+        }
     </style>       
 
 <div class="conference-schedule-wrapper">
@@ -138,10 +199,24 @@
 
 
     <div id="tuesday" class="day-content active">
+         <!-- Add this download section -->
+        
+        </div>
         <!-- Tuesday's schedule -->
         <div class="day-container">
             <div class="day-header"></div>
-            
+            <div class="downloads-bar">
+            <div class="download-info">
+                <h3>Tuesday Materials: Chemical Process</h3>
+            </div>
+            <div class="download-links">
+                <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
+                    <i class="fa fa-file-pdf-o"></i> Talk Abstracts
+                </a>
+                <a href="abstracts/tuesday-posters.pdf" class="download-link" download>
+                    <i class="fa fa-file-pdf-o"></i> Poster Abstracts
+                </a>
+            </div>
             <div class="schedule-item coffee-break">
                 <div class="time">9:00 - 9:30</div>
                 <div class="content">
@@ -309,6 +384,18 @@
     <!-- Wednesday -->
         <div class="day-container">
             <div class="day-header"></div>
+                 <div class="downloads-bar">
+            <div class="download-info">
+                <h3>TEST</h3>
+            </div>
+            <div class="download-links">
+                <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
+                    <i class="fa fa-file-pdf-o"></i> Talk Abstracts
+                </a>
+                <a href="abstracts/tuesday-posters.pdf" class="download-link" download>
+                    <i class="fa fa-file-pdf-o"></i> Poster Abstracts
+                </a>
+            </div>
             
             <div class="schedule-item coffee-break">
                 <div class="time">9:30 - 10:00</div>
@@ -486,7 +573,18 @@
         <!-- Thursday -->
         <div class="day-container">
             <div class="day-header"></div>
-            
+            <div class="downloads-bar">
+            <div class="download-info">
+                <h3>Tuesday Materials: Chemical Process</h3>
+            </div>
+            <div class="download-links">
+                <a href="abstracts/tuesday-talks.pdf" class="download-link" download>
+                    <i class="fa fa-file-pdf-o"></i> Talk Abstracts
+                </a>
+                <a href="abstracts/tuesday-posters.pdf" class="download-link" download>
+                    <i class="fa fa-file-pdf-o"></i> Poster Abstracts
+                </a>
+            </div>
             <div class="schedule-item coffee-break">
                 <div class="time">9:30 - 10:00</div>
                 <div class="content">
